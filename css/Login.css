@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+.main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to  right bottom, #60A3D9 ,#03517f);
+    justify-content: center;
+    align-items: center;
+}
+.Text{
+    margin: 30px;
+    color: blue;
+
+}
+.linkText{
+    display: grid;
+    text-decoration: none;
+}
+
+.blok{
+    display: grid;
+    width: 25vw;
+    height: 70vh;
+    background-color: #ADD8E6;
+    border-radius: 30px;
+
+}
+.foot{
+    display: grid;
+    width: 80%;
+    border-top: 2px black solid;
+    margin-left: 10%;
+}
+

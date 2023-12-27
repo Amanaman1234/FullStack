@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    color: blue;
+    
+}
+.main{
+    display: grid;
+    width: 100vw;
+    height: 91vh;
+    background-image: linear-gradient(to  right bottom, #60A3D9 ,#03517f);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.linkText{
+    display: grid;
+    text-decoration: none;
+}
+
+.blok{
+    display: grid;
+    width: 25vw;
+    height: 70vh;
+    background-color: #ADD8E6;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.form{
+    display: grid;
+    row-gap: 1vh;
+    align-items: center;
+    margin: 2vh  2vh;
+}
+.foot{
+    display: grid;
+    width: 80%;
+    border-top: 2px black solid;
+    margin-left: 10%;
+}
+
