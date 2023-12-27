@@ -2,8 +2,6 @@
  include 'Header.php';
 ?>
 
-
-
     <div class="main">
         <div class="blok">
             <h1 class="TitelText">Registreer</h1>
