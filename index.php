@@ -36,10 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="meer-info">
-                <div class="meerinfo-img">
-                    <img class="meerinfo-img" src="img/taart.jpg">
-                </div>
+            <div class="meerinfo">
                 <div class="locatie-details">
                     <div class="meer-info-text">
                         <p>wilt u meer lezen over ons klik</p>

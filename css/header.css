@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto';
+
 }
 .navbar{
     display: grid;
@@ -12,6 +13,7 @@
     column-gap: 5vw;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 .nav_knop{
     display: flex;

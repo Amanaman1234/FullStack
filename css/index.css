@@ -7,12 +7,12 @@
 
 .intro{
     display: grid;
-
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
     background-color:  lightblue;
+    background-image: url(https://w.wallhaven.cc/full/4l/wallhaven-4ljqwp.jpg);
 }
 .titel{
     display: grid;
@@ -53,8 +53,8 @@
 .meer-info-text{
     display: flex;
 }
-.meerinfo-img{
-    background-image: url(img/medewerker.png);
+.meerinfo{
     width: 25vw;
     height: 60vh;
+    border: 2px solid black;
 }
