@@ -1,37 +1,60 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto';
-}
-.navbar{
+
+.main{
     display: grid;
-    background-image: linear-gradient(to  right, #60A3D9 ,#0074B7 );
     width: 100vw;
-    height: 9vh;
-    grid-template-columns: 20vw 20vw 20vw;
-    column-gap: 5vw;
-    align-items: center;
-    justify-content: center;
-}
-.nav_knop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #003B73;
-    border: 2px black solid;
-    border-radius: 200px;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
+    row-gap: 10vh;
 }
 
-.nav_knop:hover{
-    color: #BFD7ED;
-    transition: 1s;
-    background-color: #0000B9;
+.intro{
+    display: grid;
+
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color:  lightblue;
 }
-.linkText:hover{
-    color: #60A3D9;
+.titel{
+    display: grid;
+    height: 60vh;
+    width: 55vw;
+    border: 2px black solid;
 }
-.linkText{
-    text-decoration: none;
+.titelMain{
+    display: grid;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    color: blue;
+    font-size: 4vw;
+}
+.titelSub{
+    display: grid;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    color: blue;
+    font-size: 1vw;
+}
+
+.info{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 91vh;
+    background-color: lightblue;
+    grid-template-columns: 26vw 26vw 26vw;
+}
+.locatie-img{
+    height: 20vw;
+    height: 60vh;
+}
+.meer-info-text{
+    display: flex;
+}
+.meerinfo-img{
+    background-image: url(img/medewerker.png);
+    width: 25vw;
+    height: 60vh;
 }

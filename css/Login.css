@@ -6,7 +6,7 @@
 .main{
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 91vh;
     background-image: linear-gradient(to  right bottom, #60A3D9 ,#03517f);
     justify-content: center;
     align-items: center;

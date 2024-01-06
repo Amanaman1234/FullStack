@@ -1,6 +1,7 @@
 <?php
  include 'Header.php';
 ?>
+    <link rel="stylesheet" href="css/registreer.css">
 
     <div class="main">
         <div class="blok">
