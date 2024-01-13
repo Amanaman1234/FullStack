@@ -14,26 +14,20 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-}
-.nav_knop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #003B73;
-    border: 2px black solid;
-    border-radius: 200px;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
+    list-style-type: none;
 }
 
-.nav_knop:hover{
-    color: #BFD7ED;
-    transition: 1s;
-    background-color: #0000B9;
-}
 .linkText:hover{
-    color: #60A3D9;
+    color: #33df6f;
+    background-color: #154c28;
+    transition-duration: 1s;
 }
 .linkText{
     text-decoration: none;
+    padding: 10px 10px;
+    background-color: rgb(178, 147, 227);
+    justify-content: center;
+    border: 2px solid blue;
+    border-radius: 200px;
+
 }

@@ -1,3 +1,10 @@
+<?php
+
+ session_start();
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +17,22 @@
     
 </head>
 <body>
+
     <div class="navbar">
-        <div class="home nav_knop">
-            <a class="linkText" href="index.php">Thuis</a>
-        </div>
-        <div class="login nav_knop">
-            <a class="linkText" href="login.php">Login</a>
-        </div>
-        <div class="register nav_knop">
-            <a class="linkText" href="Registreer.php">Registreer</a>
-        </div>
+        <li><a class="linkText" href="index.php">Thuis</a></li>
+
+        <?php
+        if(isset($_SESSION["gebruikerid"])){
+            echo "<li><a class='linkText' href='include/Loguit.inc.php'>Log Uit</a></li>";
+
+        }else{
+            echo "<li><a class='linkText' href='Registreer.php'>Registreer</a></li>";
+            echo "<li><a class='linkText' href='login.php'>Login</a></li>";
+        }
+        ?>
+
+
     </div>
+
+
+    

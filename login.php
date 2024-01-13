@@ -16,7 +16,7 @@ include "Header.php";
                 <button type="submit" name="submit">Login</button>
             </form>
 
-            <?php include "errortxt.php" ?>
+            <?php include "include/errortxt.php" ?>
 
             <div class="foot">
                 <p class="Text">Nog geen account <a class="linkText" href="registreer.php">registreer</a></p>

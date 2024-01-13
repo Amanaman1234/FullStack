@@ -1,7 +1,7 @@
 <?php
             if(isset($_GET["error"])){
                 if($_GET["error"] == "emptyinput"){
-                    echo "<p>dumbassnigga</p>";
+                    echo "<p>full iets in pls >_<</p>";
                 }
                 else if ($_GET["error"]) {
                     if($_GET["error"] == "toolung"){

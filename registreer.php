@@ -19,7 +19,7 @@
                    <input type="password" name="repWachtwoord"><br>
                    <button type="submit" name="submit">Registreer</button>
                </form>
-            <?php include "errortxt.php"; ?>
+            <?php include "include/errortxt.php"; ?>
 
             <div class="foot">
                 <p class="Text">Heb je al een account<a class="linkText" href="login.php">Login</a></p>
