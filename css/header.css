@@ -9,11 +9,10 @@
     background-image: linear-gradient(to  right, #60A3D9 ,#0074B7 );
     width: 100vw;
     height: 9vh;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: repeat(4, 10vw);
     column-gap: 5vw;
     align-items: center;
     justify-content: center;
-    position: absolute;
     list-style-type: none;
 }
 

@@ -1,0 +1,29 @@
+.main{
+    height: 91vh;
+    width: 100vw;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 20vh);
+    justify-content: center;
+    align-items: center;
+    row-gap: 10vw;
+    column-gap: 7vw;
+}
+.taart{
+    height: 30vh;
+    width: 20vw;
+    border: 2px black solid;
+    background-color: brown;
+    margin-top: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    margin-left: 25%;
+    height: 20vh;
+    width: auto;
+}
+.text{
+    margin-left: 25%;
+}

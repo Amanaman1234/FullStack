@@ -20,6 +20,7 @@
 
     <div class="navbar">
         <li><a class="linkText" href="index.php">Thuis</a></li>
+        <li><a class="linkText" href="Taarten.php">Taarten</a></li>
 
         <?php
         if(isset($_SESSION["gebruikerid"])){
