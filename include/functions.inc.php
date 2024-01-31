@@ -109,3 +109,64 @@ function loginUser($conn, $gebruikersnaam, $wachtwoord){
         exit();
     }
 }
+
+function checktaart(){
+    switch (isset($_GET["smaak"])){
+
+        case $_GET["smaak"] == "appel":
+            echo "<img class='taart' src='img/Apel.jpg'>
+            </section>
+            <section>
+                <div class='orderBox'>
+                    <h1>Appel</h1>
+                    <h1>$5</h1>";
+            break;
+
+        case $_GET["smaak"] == "chocolade":
+              echo "<img class='taart' src='img/chocoladetaart-met-karamelmousse-en-koffie-ganache-1.jpg'>
+              </section>
+              <section>
+                  <div class='orderBox'>
+                      <h1>Chocolade</h1>
+                      <h1>$10</h1>";
+              break;
+
+        case $_GET["smaak"] == "moka":
+            echo "<img class='taart' src='img/Moka.jpg'>  
+              </section>
+            <section>
+                <div class='orderBox'>
+                    <h1>Mokka</h1>
+                    <h1>$15</h1>";
+            break;
+            
+        case $_GET["smaak"] == "minecraft":
+            echo "<img class='taart' src='img/Minecraft.jpg'>
+            </section>
+            <section>
+                <div class='orderBox'>
+                    <h1>Minecraft</h1>
+                    <h1>$20</h1>";
+            break;
+
+        case $_GET["smaak"] == "spongebob":
+            echo "<img class='taart' src='img/Spongebob.jpg'>
+            </section>
+            <section>
+                <div class='orderBox'>
+                    <h1>Spongebob</h1>
+                    <h1>$100</h1>";
+                    
+                    
+            break;
+
+        case $_GET["smaak"] == "fortnite":
+             echo "<img class='taart' src='img/fortnite.jpg'>
+             </section>
+             <section>
+                 <div class='orderBox'>
+                     <h1>Fortnite</h1>
+                     <h1>$1000</h1>";
+             break;
+    }
+}

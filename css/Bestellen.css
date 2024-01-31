@@ -1,0 +1,39 @@
+main{
+    display: grid;
+    width: 100vw;
+    height: 91vh;
+    background-image: linear-gradient(to  right bottom, #60A3D9 ,#03517f);
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 45vh ;
+
+}
+
+.taart{
+    height: auto;
+    width: 30vw;
+    border: 2px black solid;
+    background-color: brown;    
+}
+section{
+    display: grid;
+    width: 30vw;
+    height: 80vh;
+    margin-left: 7vw;   
+    margin-top: 50vh;
+
+}
+.orderBox{
+    width: 30vw;
+    height: 80vh;
+    background-color: rgb(88, 183, 215);
+    border-radius: 50px;
+    color: blue;
+}
+form{
+    display: grid;
+    row-gap: 1vh;
+    align-items: center;
+    margin: 2vh  2vh;
+}
