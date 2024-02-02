@@ -1,5 +1,5 @@
 <?php
 
-if (isset($_GET["BESTEL"])) {
-
+if (isset($_POST["BESTEL"])) {
+    
 }

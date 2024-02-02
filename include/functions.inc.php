@@ -170,3 +170,9 @@ function checktaart(){
              break;
     }
 }
+
+
+function hallo(){
+    header("location: ../Login.php?error=wronglogin");
+    exit();
+}

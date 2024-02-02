@@ -9,14 +9,15 @@ require_once 'include/functions.inc.php';
         <?php checktaart(); ?>
 
             <form action="include/Bestel.inc.php" method="post">
-                <p class="Text">Naam</p>
-                   <input type="text" name="naam">
-                   <p class="Text">Gebruikersnaam</p>
-                   <input type="text" name="gebruikersnaam">
-                   <p class="Text">E-mai</p>
-                   <input type="text" name="email">
-                  <button type="submit" name="BESTEL">Bestel</button>
-                  
+            <?php
+        if(isset($_SESSION["gebruikerid"])){
+            echo "<button type='submit' name='BESTEL'>Bestel</button>";
+
+        }else{
+            echo "<h1>U bent nog niet ingelogd<br> Log in alstu blieft >_<</h1>";
+            echo "<li><a class='linkText' href='login.php'>Login</a></li>";
+        }
+        ?>                  
             </form>
         </div>
     </section>
