@@ -5,14 +5,14 @@
 
     <section id="main">
         <div class="taart" data-taart="chocolade">
-        <div class="taartSub"><img class="foto" src="img/chocoladetaart-met-karamelmousse-en-koffie-ganache-1.jpg"></div>
+        <div class="taartSub"><img class="foto" src="img/chocolade.jpg"></div>
             <p class="text">chocoladetaart</p></div>     
         </div>
         <div class="taart" data-taart="moka">
             <div class="taartSub"><img class="foto" src="img/Moka.jpg"></div>
             <p class="text">mokka</p></div>
         <div class="taart"  data-taart="appel">
-        <div class="taartSub"><img class="foto" src="img/Apel.jpg"></div>
+        <div class="taartSub"><img class="foto" src="img/appel.jpg"></div>
             <p class="text">AppelTaart</p></div>
         </div>
         <div class="taart"  data-taart="minecraft">

@@ -6,17 +6,29 @@ require_once 'include/functions.inc.php';
 
 <main>
     <section>
-        <?php checktaart(); ?>
+        <?php 
+        $smaak = checktaart();
+        printTaart($smaak);
+        
+         ?>
 
             <form action="include/Bestel.inc.php" method="post">
-                <p class="Text">Naam</p>
-                   <input type="text" name="naam">
-                   <p class="Text">Gebruikersnaam</p>
-                   <input type="text" name="gebruikersnaam">
-                   <p class="Text">E-mai</p>
-                   <input type="text" name="email">
-                  <button type="submit" name="BESTEL">Bestel</button>
-                  
+                <p>Adres</p>
+            <input type="text" name="adres">
+            <p>postcode</p>
+            <input type="text" name="postcode">
+            <p>Telefoon</p>
+            <input type="text" name="telefoon">
+            <?php
+         
+        if(isset($_SESSION["gebruikerid"])){
+            echo "<button type='submit' name='BESTEL'>Bestel</button>";
+
+        }else{
+            echo "<h1>U bent nog niet ingelogd<br> Log in alstu blieft >_<</h1>";
+            echo "<li><a class='linkText' href='login.php'>Login</a></li>";
+        }
+        ?>                  
             </form>
         </div>
     </section>
