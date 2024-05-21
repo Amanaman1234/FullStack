@@ -134,7 +134,6 @@ function checktaart(){
         header("location: ../registreer.php?error=stmtfailed");
         exit();
      }
-
     mysqli_stmt_bind_param($stmt, "ssss", $currgebr, $adres, $postcode, $telefoon);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
