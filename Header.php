@@ -24,7 +24,9 @@
 
         <?php
         if(isset($_SESSION["gebruikerid"])){
+            echo "<li><a class='linkText' >".$_SESSION["naam"]."</a></li>";
             echo "<li><a class='linkText' href='include/Loguit.inc.php'>Log Uit</a></li>";
+
 
         }else{
             echo "<li><a class='linkText' href='Registreer.php'>Registreer</a></li>";

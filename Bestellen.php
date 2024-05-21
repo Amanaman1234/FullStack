@@ -19,6 +19,8 @@ require_once 'include/functions.inc.php';
             <input type="text" name="postcode">
             <p>Telefoon</p>
             <input type="text" name="telefoon">
+            <p>Rekening nummer</p>
+            <input type="text" name="Bank">
             <?php
          
         if(isset($_SESSION["gebruikerid"])){

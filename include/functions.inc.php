@@ -24,7 +24,6 @@ function uidNameLength($gebruikersnaam) {
     }else{
         return false;
     }
-    
 }
 
 function invalidgebruikersnaam($gebruikersnaam){
@@ -84,7 +83,6 @@ mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 
 header("location:../registreer.php?error=none");
-
 }
 
 function loginUser($conn, $gebruikersnaam, $wachtwoord){
@@ -104,6 +102,7 @@ function loginUser($conn, $gebruikersnaam, $wachtwoord){
     }else if($checkPwd === true){
         session_start();
         $_SESSION["gebruikerid"] = $uidExists["GebruikerId"];
+        $_SESSION["naam"] = $uidExists["Naam"];
         $_SESSION["gebruikersnaam"] = $uidExists["Gebruikersnaam"];
         header("location: ../index.php");
         exit();
@@ -126,10 +125,9 @@ function checktaart(){
         return "Niks geselecteerd";
     }
 }
-function Bestel($conn){
+ function Bestel($conn){
     session_start();
     $currgebr = $_SESSION["gebruikerid"];
-    $sql = 'INSERT INTO (bestelling) WHERE ("GebruikersId ")';
-    header("location: ../index.php");
-
-}
+    $sql = "INSERT INTO `bestelling`(`GebruikersId`) VALUES (" . $currgebr . ");";
+     $run = mysqli_query($conn, $sql);
+ }
