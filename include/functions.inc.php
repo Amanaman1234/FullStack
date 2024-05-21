@@ -125,9 +125,18 @@ function checktaart(){
         return "Niks geselecteerd";
     }
 }
- function Bestel($conn){
+ function Bestel($conn, $adres, $postcode, $telefoon){
     session_start();
     $currgebr = $_SESSION["gebruikerid"];
-    $sql = "INSERT INTO `bestelling`(`GebruikersId`) VALUES (" . $currgebr . ");";
-     $run = mysqli_query($conn, $sql);
+    $sql = "INSERT INTO `bestelling`(`GebruikersId`,`adres`,`postcode`,`telefoon`) VALUES (?,?,?,?);";
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+        header("location: ../registreer.php?error=stmtfailed");
+        exit();
+     }
+
+    mysqli_stmt_bind_param($stmt, "ssss", $currgebr, $adres, $postcode, $telefoon);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
  }
+ 
