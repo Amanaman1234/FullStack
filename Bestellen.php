@@ -19,9 +19,12 @@ require_once 'include/functions.inc.php';
             <input type="text" name="postcode">
             <p>Telefoon</p>
             <input type="text" name="telefoon">
-            <p>Rekening nummer</p>
-            <input type="text" name="Bank">
+            <input type="text" class="banktext" value="<?php checknummer($smaak);?>" name="Bank">
             <?php
+
+
+
+                
          
         if(isset($_SESSION["gebruikerid"])){
             echo "<button type='submit' name='BESTEL'>Bestel</button>";

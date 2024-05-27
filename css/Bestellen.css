@@ -37,3 +37,6 @@ form{
     align-items: center;
     margin: 2vh  2vh;
 }
+.banktext{
+    opacity: 0;
+}

@@ -125,17 +125,51 @@ function checktaart(){
         return "Niks geselecteerd";
     }
 }
- function Bestel($conn, $adres, $postcode, $telefoon){
+
+ function Bestel($conn, $adres, $postcode, $telefoon,$bank){
     session_start();
+
     $currgebr = $_SESSION["gebruikerid"];
-    $sql = "INSERT INTO `bestelling`(`GebruikersId`,`adres`,`postcode`,`telefoon`) VALUES (?,?,?,?);";
+    $sql = "INSERT INTO `bestelling`(`GebruikersId`,`TaartID`,`adres`,`postcode`,`telefoon`) VALUES (?,?,?,?,?);";
+    
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
         header("location: ../registreer.php?error=stmtfailed");
         exit();
      }
-    mysqli_stmt_bind_param($stmt, "ssss", $currgebr, $adres, $postcode, $telefoon);
+
+    mysqli_stmt_bind_param($stmt, "sssss", $currgebr,$bank, $adres, $postcode, $telefoon);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
  }
- 
+
+
+ function checknummer($smaak) {
+    $nummer = 0; 
+    if (isset($_GET["smaak"])) {
+
+        switch ($_GET["smaak"]) {
+            case "chocolade":
+                $nummer = 1;
+                break;
+            case "moka":
+                $nummer = 2;
+                break;
+            case "appel":
+                $nummer = 3;
+                break;
+            case "minecraft":
+                $nummer = 4;
+                break;
+            case "spongebob":
+                $nummer = 5;
+                break;
+            case "fortnite":
+                $nummer = 6;
+                break;
+        }
+    }
+
+
+    echo $nummer;
+}

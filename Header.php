@@ -23,8 +23,9 @@
         <li><a class="linkText" href="Taarten.php">Taarten</a></li>
 
         <?php
+
         if(isset($_SESSION["gebruikerid"])){
-            echo "<li><a class='linkText' >".$_SESSION["naam"]."</a></li>";
+            echo "<li><a class='linkText' href='Profiel.php' >".$_SESSION["naam"]."</a></li>";
             echo "<li><a class='linkText' href='include/Loguit.inc.php'>Log Uit</a></li>";
 
 
